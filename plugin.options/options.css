@@ -1,0 +1,120 @@
+.wpw-admin-settings .site-general-options label{
+  min-width: 150px;
+  display:block;
+}
+
+.wpw-admin-settings .site-general-options{
+  margin-bottom:10px;
+  max-width: 600px;
+}
+
+.wpw-admin-settings .site-general-options input, .wpw-admin-settings .site-general-options select 
+{
+  width:400px;
+  max-width: 100%;
+}
+
+.wpw-admin-settings .site-general-options textarea 
+{
+  width:100%;
+  max-width: 100%;
+}
+
+.wpw-repeater-items{
+  border:1px dotted #aaa;
+  padding:5px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+.wpw-repeater-items:empty:before {
+  content: "no items";
+  display: inline-block;
+  color:#aaa;
+}
+
+.wpw-repeater-items .wpw-repeater-item{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px dotted #bbb;
+  background: #ffffff73;
+  border-radius: 5px;
+  position: relative;
+}
+
+[data-type='repeater'].inline-item-content{
+  width: auto;
+  max-width: none;
+}
+
+[data-type='repeater'].inline-item-content .wpw-repeater-item label{
+  min-width: auto;
+  margin-right:5px;
+}
+
+[data-type='repeater'].inline-item-content .wpw-repeater-item:hover{
+  background-color: rgba(170, 170, 170, 0.1);
+}
+
+[data-type='repeater'].inline-item-content .wpw-repeater-item .site-general-options{
+  margin-right:10px;
+  margin-bottom: 0px;
+}
+
+[data-type='repeater'].inline-item-content .wpw-repeater-item label,
+[data-type='repeater'].inline-item-content .wpw-repeater-item input,
+[data-type='repeater'].inline-item-content .wpw-repeater-item select
+{
+  display: inline-block;
+}
+
+[data-type='repeater'].inline-item-content .wpw-repeater-item textarea,
+[data-type='repeater'].inline-item-content .wpw-repeater-item input,
+[data-type='repeater'].inline-item-content .wpw-repeater-item select
+{
+  display: inline-block;
+  width: 200px;
+}
+
+[data-type='repeater'].inline-item-content .wpw-repeater-item {
+  display: flex;
+}
+
+.wpw-repeater-items .wpw-repeater-item .item-panel{
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  background: #eee;
+  top: -10px;
+  border-radius: 10px;  
+}
+
+.wpw-repeater-items .wpw-repeater-item .item-panel span{
+  font-size: 10px;
+  cursor: pointer;
+  padding: 0px 5px;
+  margin-left: 5px;
+
+}
+
+.wpw-repeater-items .wpw-repeater-item .item-panel span:hover{
+  color: #000;
+}
+
+@media only screen and (max-width: 800px) {
+  [data-type='repeater'] .wpw-repeater-items .wpw-repeater-item{
+    flex-wrap: wrap;
+  } 
+  [data-type='repeater'] .wpw-repeater-items .wpw-repeater-item .site-general-options{
+    margin-right: 10px;
+  }
+
+  [data-type='repeater'].inline-item-content .wpw-repeater-item textarea,
+  [data-type='repeater'].inline-item-content .wpw-repeater-item input,
+  [data-type='repeater'].inline-item-content .wpw-repeater-item select
+  {
+    display: inline-block;
+    width: 100%;
+  }
+
+}

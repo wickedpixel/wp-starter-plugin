@@ -5,7 +5,7 @@
     Version: 0.1-26ian2023
     Author: wickedpixel
 */
-include("plugin.options.php");
+include("plugin.options/module.php");
 
 class WPW_StarterPlugin{
     public $key = "wickedpixel";
@@ -65,6 +65,6 @@ $starter_options = [
 ];
 
 
-$wickedpixel_plugin_options = new SDW_PluginOptions($starter_plugin->key, "Wickedpixel Options");
+$wickedpixel_plugin_options = new WPW_PluginOptions($starter_plugin->key, "Wickedpixel Options");
 $wickedpixel_plugin_options->register_options($starter_options);
 
